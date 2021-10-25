@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500&family=Poppins:ital,wght@0,200;0,300;1,100;1,200&display=swap");
+.nav-bar .nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar .nav-logo {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: #192a56;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar {
+  background: #f7f7f7;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  padding: 0.5rem calc(100vw - 1200px)/2;
+  z-index: 10;
+  position: relative;
+}
+
+.nav-bar .nav-logo {
+  color: #2541b2;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  cursor: pointer;
+  margin-left: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar .nav-menu {
+    display: none;
+  }
+}
+
+.nav-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 5rem;
+}
+
+.nav-bar a {
+  padding: 1.5rem;
+  color: #222121;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-bar a:hover {
+  color: #00cc66;
+  -webkit-transition: var(all 0.5s ease);
+  transition: var(all 0.5s ease);
+}
+
+.nav-bar #btn {
+  background-color: #00cc66;
+  color: #222121;
+  padding: .3rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  border-radius: 30px;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+}
+
+.nav-bar #btn:hover {
+  background: #fb4b4e;
+}
+
+.nav-bar .nav-bars {
+  opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar .nav-bars {
+    color: #222121;
+    opacity: 1;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.hero {
+  background: #f7f7f7;
+}
+
+.hero .hero-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  height: 90vh;
+  width: 100%;
+  padding-right: 24px;
+  padding-left: 24px;
+  z-index: 1;
+  max-width: 1200px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero .hero-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+
+.hero .hero-container-left {
+  line-height: 1.2;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  .hero .hero-container-left {
+    padding: 5rem 0;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .hero .hero-container-left {
+    line-height: 1.5;
+  }
+}
+
+.hero .hero-container-left h1 {
+  font-size: 3rem;
+  color: #00cc66;
+  line-height: 5rem;
+}
+
+@media screen and (max-width: 280px) {
+  .hero .hero-container-left h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.hero .hero-container-left h2 {
+  font-size: 2rem;
+  color: #222121;
+  margin-left: 40px;
+  line-height: 3rem;
+}
+
+@media screen and (max-width: 280px) {
+  .hero .hero-container-left h2 {
+    font-size: 2rem;
+  }
+}
+
+.hero .hero-container-left p {
+  font-size: 1.3rem;
+  text-transform: none;
+  color: #222121;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 280px) {
+  .hero .hero-container-left p {
+    font-size: 1.5rem;
+  }
+}
+
+.hero .hero-container .btn {
+  color: white;
+  padding: .5rem 2rem;
+  background: #00cc66;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: .9rem;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/*# sourceMappingURL=s.css.map */
